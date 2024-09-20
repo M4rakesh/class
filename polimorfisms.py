@@ -19,7 +19,7 @@ print(pupil.get_age())'''
 #print(pupil.__age)
 #pupil.set_age()
 
-class Animal:
+'''class Animal:
     legs=4
     tail=1
 
@@ -47,3 +47,45 @@ a.voice()
 cat1,cat2=Cat(),Cat()
 dog1,dog2=Dog(),Dog()
 cow1,cow2=Cow(),Cow()
+
+farm_band=[cat1,cat2,dog1,dog2,cow1,cow2]
+for i in farm_band:
+    if isinstance(i,Cat):
+        i.cat_voice()
+    if isinstance(i,Dog):
+        i.dog_voice()
+    if isinstance(i,Cow):
+        i.cow_voice()'''
+
+class Animal:
+    legs=4
+    tail=1
+
+    def voice(self):
+        print("Kaut-kāda skaņa")
+    
+
+class Cat():
+    def voice(self):
+        print("Mjau")
+
+
+class Dog():
+    def voice(self):
+        print("Gav")
+
+
+class Cow():
+    def voice(self):
+        print("Muuu")
+
+
+a=Animal()
+a.voice()
+cat1,cat2=Cat(),Cat()
+dog1,dog2=Dog(),Dog()
+cow1,cow2=Cow(),Cow()
+
+farm_band=[cat1,cat2,dog1,dog2,cow1,cow2]
+for i in farm_band:
+    i.voice()
