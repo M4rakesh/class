@@ -46,7 +46,7 @@ class Dzivnieks:
 
 
 # Apakšklase (Subklase) - mantošana no Dzivnieks
-class Suns(Dzivnieks):
+'''class Suns(Dzivnieks):
     def __init__(self, vards, šķirne):
         super().__init__(vards)  # Izsauc virsklases konstruktoru
         self.šķirne = šķirne
@@ -76,4 +76,4 @@ suns = Suns("Riks", "Labradors")
 kakis = Kaķis("Mija", 5)
 
 print(suns.iepazīstināt())
-print(kakis.iepazīstināt())
+print(kakis.iepazīstināt())'''
